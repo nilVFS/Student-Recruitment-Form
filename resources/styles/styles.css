@@ -1,0 +1,123 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    outline: none;
+}
+
+:root {
+    --background-main: rgba(0, 0, 0, 0.7);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    font-size: 18px;
+    font-weight: 600;
+    color: lightcyan;
+    background: url("/resources/images/helen-ngoc-n-xBOa3VTGFyU-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+}
+
+header {
+    width: 100%;
+    background-color: var(--background-main);
+    margin: 1%;
+    padding: 0.75em;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 10vw;
+    margin-bottom: 0.2em;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 22px;
+    padding: 0.35em;
+    margin: 1em;
+    border-bottom: 2px solid lightcyan;
+}
+
+main {
+    width: 100%;
+    max-height: 100%;
+    background-color: var(--background-main);
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+
+section div {
+    margin: 1em 2em;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+input[type="text"], input[type="email"], input[type="date"], select {
+    font-size: 18px;
+    padding: 0.2em;
+    min-width: 300px;
+    max-width: 100%;
+    border-radius: 0.25em;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 0 auto 1em;
+    font-size: 22px;
+    width: 20%;
+    padding: 0.75em;
+    -webkit-appearance: none;
+    outline: none;
+    background-color: green;
+}
+
+
+.spec {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    main {
+        width: 70%;
+    }
+
+    header {
+        width: 70%;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+
+    header {
+        max-width: 50%;
+    }
+
+    main {
+        max-width: 50%;
+        margin-bottom: 1em;
+    }
+}
