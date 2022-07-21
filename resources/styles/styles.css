@@ -77,23 +77,28 @@ input[type="text"], input[type="email"], input[type="date"], select {
     border-radius: 0.25em;
 }
 
-input[type="submit"] {
-    display: block;
-    margin: 0 auto 1em;
-    font-size: 22px;
-    width: 20%;
-    padding: 0.75em;
-    -webkit-appearance: none;
-    outline: none;
-    background-color: green;
-}
-
 
 .spec {
     display: flex;
     flex-direction: row;
 }
 
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 0 auto 1em;
+    font-size: 22px;
+    width: 60%;
+    padding: 0.75em;
+    -webkit-appearance: none;
+    outline: none;
+    background-color: green;
+    border-radius: 0.35em;
+}
 
 
 @media screen and (min-width: 768px) {
@@ -104,9 +109,14 @@ input[type="submit"] {
     header {
         width: 70%;
     }
+    
 
     h1 {
         font-size: 3rem;
+    }
+
+    input[type="submit"] {
+        width: 30%;
     }
 }
 
@@ -119,5 +129,9 @@ input[type="submit"] {
     main {
         max-width: 50%;
         margin-bottom: 1em;
+    }
+
+    input[type="submit"] {
+        width: 25%;
     }
 }

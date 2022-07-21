@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Подача документов</title>
     <link href="/resources/styles/reset.css" type="text/css" rel="stylesheet" />
     <link href="/resources/styles/styles.css" type="text/css" rel="stylesheet" />
 </head>
@@ -18,31 +18,42 @@
     <main>
         <form action="#" method="POST">
             <section role="region" aria-labelledby="student-info">
+
                 <h2 id="student-info">Информация об Абитуриенте</h2>
+
                 <div class="info">
                     <label for="student-surname">Фамилия:</label>
                     <input id="student-surname" type="text" name="student-surname" placeholder="Иванов" required />
                 </div>
+
                 <div class="info">
                     <label for="student-name">Имя:</label>
                     <input id="student-name" type="text" name="student-name" placeholder="Иван" required />
                 </div>
+
                 <div class="info">
                     <label for="student-patronymic">Отчество:</label>
                     <input id="student-patronymic" type="text" name="student-patronymic" placeholder="Иванович" required />
                 </div>
+
                 <div class="info">
                     <label for="birth-date">Дата рождения:</label>
                     <input id="birth-date" type="date" name="birth-date" required />
                 </div>
+
                 <div class="info">
                     <label for="email">E-mail:</label>
                     <input id="student-email" type="email" name="email" 
                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="ivanov@example.com" />
                 </div>
+
             </section>
+
+
             <section role="region" aria-labelledby="specialization">
+
                 <h2 id="specialization">Направления подготовки</h2>
+
                 <div class="qualification">
                     <label for="qual">Квалификация</label>
                     <select id="qual" required>
@@ -53,69 +64,106 @@
                         <option value="postgraduate">Аспирантура</option>
                     </select>
                 </div>
+                
                 <div class="qualification">
-                    <label for="">
-                        <input id="" type="checkbox" />
-                        07.00.00 АРХИТЕКТУРА
+                    <label for="architecture">
+                        <input id="architecture" type="checkbox" name="orientation" />
+                        07.00.00 Архитектура
                     </label>
                 </div>
+
                 <div class="qualification">
-                    <label for="">
-                        <input id="" type="checkbox" />
-                        06.00.00 БИОЛОГИЧЕСКИЕ НАУКИ
+                    <label for="biology">
+                        <input id="biology" type="checkbox" name="orientation"  />
+                        06.00.00 Биологиечские науки
                     </label>
                 </div>
+
                 <div class="qualification">
-                    <label for="">
-                        <input id="" type="checkbox" />
-                        54.00.00 ИЗОБРАЗИТЕЛЬНОЕ ИСКУССТВО И ПРИКЛАДНЫЕ ВИДЫ ИСКУССТВ
+                    <label for="art">
+                        <input id="art" type="checkbox" name="orientation"  />
+                        54.00.00 Изобразительное искусство
                     </label>
                 </div>
+
                 <div class="qualification">
-                    <label for="">
-                        <input id="" type="checkbox" />
-                        09.00.00 ИНФОРМАТИКА И ВЫЧИСЛИТЕЛЬНАЯ ТЕХНИКА
+                    <label for="cs">
+                        <input id="cs" type="checkbox" name="orientation"  />
+                        09.00.00 Информатика и вычислительная техника
                     </label>
                 </div>
+
                 <div class="qualification">
-                    <label for="">
-                        <input id="" type="checkbox" />
-                        10.00.00 ИНФОРМАЦИОННАЯ БЕЗОПАСНОСТЬ
+                    <label for="cyber-sec">
+                        <input id="cyber-sec" type="checkbox" />
+                        10.00.00 Информационная безопасность
                     </label>
                 </div>
+
                 <div class="qualification">
-                    <label for="">
-                        <input id="" type="checkbox" />
-                        01.00.00 МАТЕМАТИКА И МЕХАНИКА
+                    <label for="math">
+                        <input id="math" type="checkbox" name="orientation"  />
+                        01.00.00 Математика и механика
                     </label>
                 </div>
+
                 <div class="qualification">
-                    <label for="">
-                        <input id="" type="checkbox" />
-                        41.00.00 ПОЛИТИЧЕСКИЕ НАУКИ И РЕГИОНОВЕДЕНИЕ
+                    <label for="politics">
+                        <input id="politics" type="checkbox" name="orientation"  />
+                        41.00.00 Политические науки и регионоведение
                     </label>
                 </div>
+
                 <div class="qualification">
-                    <label for="">
-                        <input id="" type="checkbox" />
-                        39.00.00 СОЦИОЛОГИЯ И СОЦИАЛЬНАЯ РАБОТА
+                    <label for="social-work">
+                        <input id="social-work" type="checkbox" name="orientation"  />
+                        39.00.00 Социология и социальная работа
                     </label>
                 </div>
+
                 <div class="qualification">
-                    <label for="">
-                        <input id="" type="checkbox" />
-                        42.00.00 СРЕДСТВА МАССОВОЙ ИНФОРМАЦИИ И ИНФОРМАЦИОННО-БИБЛИОТЕЧНОЕ ДЕЛО
+                    <label for="mass-media">
+                        <input id="mass-media" type="checkbox" name="orientation"  />
+                        42.00.00 Средства массовой информации
                     </label>
                 </div>
+
                 <div class="qualification">
-                    <label for="">
-                        <input id="" type="checkbox" />
-                        38.00.00 ЭКОНОМИКА И УПРАВЛЕНИЕ
+                    <label for="economics">
+                        <input id="economics" type="checkbox" name="orientation" />
+                        38.00.00 Экономика и управление
                     </label>
                 </div>
             </section>
+
+
             <section role="region" aria-labelledby="documents">
-                <h2 id="documents"></h2>
+
+                <h2 id="documents">Документы</h2>
+
+                <div class="docs">
+                    <label for="photo">Фото:
+                        <input type="file" name="photo" id="photo">
+                    </label>
+                </div>
+
+                <div>
+                    <label for="diploma">Аттестат:
+                        <input type="file" name="diploma" id="diploma">
+                    </label>
+                </div>
+            </section>
+
+            <section role="region" aria-labelledby="agreements">
+
+                <h2 id="agreements">Соглашения</h2>
+
+                <div>
+                    <label for="processing">
+                        <input type="checkbox" name="processing" id="processing">
+                        Я согласен на обработку своих персональных данныз
+                    </label>
+                </div>
             </section>
 
             <input type="submit" value="Отправить" />
